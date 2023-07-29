@@ -119,4 +119,16 @@ public class InventoryManager : MonoBehaviour
         }
         return -1;
     }
+
+    public bool FindInventoryItem(string itemID)
+    {
+        for (int i = 0; i < inventorySlots.Count; i++)
+        {
+            if (inventorySlots[i].CheckItem(itemID))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -44,7 +44,7 @@ public class CharacterControllerMovement : MonoBehaviour
         if(characterController.isGrounded && Input.GetKeyDown(KeyCode.Space)) 
         {
             // Calculate the velocity given the height
-            yVelocity = Mathf.Sqrt(jumpHeight * 2.0f * Mathf.Abs(gravity));
+            yVelocity = Mathf.Sqrt(jumpHeight * 3.0f * Mathf.Abs(gravity));
         }
         // Keep applying gravitational force
         yVelocity += gravity * gravityScale * Time.deltaTime;

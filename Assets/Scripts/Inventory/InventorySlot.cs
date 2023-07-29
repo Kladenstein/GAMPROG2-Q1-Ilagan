@@ -15,6 +15,12 @@ public class InventorySlot : MonoBehaviour
         itemIcon.enabled = true;
         itemIcon.sprite = itemData.icon;
     }
+    public bool CheckItem(string id)
+    {
+        if (itemData != null)
+            return itemData.id == id;
+        return false;
+    }
 
     public void UseItem()
     {

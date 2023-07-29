@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public float maxMP;
     public List<Attribute> attributes;
 
-
     public void RemoveAttributes(List<Attribute> removedAttributes)
     {
         foreach(Attribute att in removedAttributes)
